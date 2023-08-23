@@ -16,7 +16,7 @@ def convert_to_24_hour(hour, minute, meridian):
     
     return time_24_hour
 
-# Test cases
+
 print(convert_to_24_hour(11, 30, "am"))  
 print(convert_to_24_hour(12, 00, "pm"))  
 print(convert_to_24_hour(12, 0, "am"))  

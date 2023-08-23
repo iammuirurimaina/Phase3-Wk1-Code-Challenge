@@ -1,17 +1,11 @@
-def exactly_two_positive(a, b, c):
-    # Count the number of positive integers 
-    count_positive = sum([1 for num in [a, b, c] if num > 0])
-    
-    # exactly two integers are positive
-    if count_positive == 2:
-        return True
-    else:
+def two_positive_digits(num1, num2, num3):
+    if num1 < 0 and num2 < 0 and num3 > 0 :
+        response = True
+        return response
+    else :
+        response = False
         return False
+    
+print(two_positive_digits(2,-2,3))
 
-# Test cases
-print(exactly_two_positive(2, 4, -3))   
-print(exactly_two_positive(-4, 6, 8))   
-print(exactly_two_positive(4, -6, 9))   
-print(exactly_two_positive(-4, 6, 0))  
-print(exactly_two_positive(4, 6, 10))  
-print(exactly_two_positive(-14, -3, -4)) 
+
